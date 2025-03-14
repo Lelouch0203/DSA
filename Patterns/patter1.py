@@ -105,8 +105,44 @@ for i in range(0,n):
 
 print()
 
-# for i in range(0,n):
-#     for j in range(0,i+1):
-#         print("*",end=" ")
-#     for j in range(0,2*(n-i)):
-        
+for i in range(0,n):
+    for j in range(0,i+1):
+        print(j+1,end="")
+    for j in range(0,2*(n-i-1)):
+        print(" ",end="")
+    for j in range(i+1,0,-1):
+        print(j,end="")
+    print()
+    
+print()
+
+num =ord('A')
+for i in range(0,n):
+    for j in range(0,i+1):
+        print(chr(num+j),end=" ")      
+    print()
+
+print()
+
+for i in range(0,n):
+    for j in range(0,n-i):
+        print(chr(num+j),end=" ")
+    print()
+    
+print()
+
+
+for i in range(0,n):
+    for j in range(0,i+1):
+        print(chr(num+i),end=" ")      
+    print()
+
+print()
+
+for i in range(0,n):
+    for j in range(0,n-i):
+        print(chr(num+i),end=" ")
+    print()
+
+print()
+
