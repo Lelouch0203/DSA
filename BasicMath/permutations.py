@@ -1,12 +1,9 @@
-from itertools import permutations
-x = int(input())
-y = int(input())
-z = int(input())
-n = int(input())
-ans=[]
+from itertools import combinations
+x = 1
+y = 1
+z = 2
+n = 3
 
-perm=list(permutations([x,y,z]))
-for i in perm:
-    if sum(i)!=n:
-        ans.append(i)
-print(ans)
+perm=list(combinations([x,y,z],3))
+
+print(perm)
