@@ -1,4 +1,5 @@
-for i in range(min(n1,n2),0,-1):
-#     if n1%i==0 and n2%i==0:
-#         gcd=i
-#         break
+x=1
+# y=1
+# z=2
+# coordinates = [[i, j, k] for i in range(x+1) for j in range(y+1) for k in range(z+1)]
+# print(coordin
