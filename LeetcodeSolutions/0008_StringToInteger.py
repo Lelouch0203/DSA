@@ -23,3 +23,4 @@ def myAtoi(self, s: str) -> int:
     if result > INT_MAX:
         return INT_MAX
     return result
+print(myAtoi('',"five"))
