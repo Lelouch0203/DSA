@@ -9,5 +9,5 @@ n=7
 meetings=[[2,4],[1,3]]   
 
 meetings=sorted(meetings)
-new=numpy.array(meetings).flatten
-print(meetings)
+new=(numpy.array(meetings).flatten())
+print(sorted([int (x) for x in new]))
