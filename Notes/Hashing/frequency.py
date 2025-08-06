@@ -35,3 +35,15 @@ def count3(arr):
     for x in m:
         print(x,m[x],end=" ")
 count3(arr = [10,5,10,15,10,5])
+print()
+
+# heck method
+def count4(arr):
+    m={}
+    for x in arr:
+       m[x]=m.get(x,0)+1
+    for x in m:
+        print(x,m[x],end=" ")
+count4(arr = [10,5,10,15,10,5])
+
+

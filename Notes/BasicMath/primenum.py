@@ -1,16 +1,17 @@
-n=int(input("number"))
+n = int(input("Enter a number: "))
 
 def is_prime(n):
     if n <= 1:
         return False
-    if n <= 3:
+    if n == 2:
         return True
-    i = 4
+    if n % 2 == 0:
+        return False
+    i = 3
     while i * i <= n:
- 
-        if n%i==0:
+        if n % i == 0:
             return False
-        i+=1
+        i += 2  # check only odd numbers
     return True
-print(is_prime(n))
 
+print(is_prime(n))
