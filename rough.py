@@ -32,9 +32,11 @@ from collections import defaultdict
 
 # print(gn2(["act","pots","tops","cat","stop","hat"]))
         
-def f(n):
-    if n>0:
-        f(n-1)
-        print(n)
-        f(n-1)
-f(3)
+# nums=[3,4,5,1,2]
+# # if nums == sorted(nums):
+# #     print("t")
+# for i in range(len(nums)-1):
+#     if nums[i]>nums[i+1]:
+#         nums=nums[i+1:]+nums[:i+1]
+#         print(nums)
+#         print(nums==sorted(nums))
