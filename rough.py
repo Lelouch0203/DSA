@@ -40,20 +40,36 @@ from collections import defaultdict
 #         nums=nums[i+1:]+nums[:i+1]
 #         print(nums)
 #         print(nums==sorted(nums))
-nums=[1,2,2,3,3,3]
+nums=[1,1,1,1,2,2,3]
 k=2
 count = {}
 for num in nums:
     count[num] = 1 + count.get(num, 0)
 
-heap = []
-for num in count.keys():
-    heapq.heappush(heap, (count[num], num))
-    if len(heap) > k:
-        heapq.heappop(heap)
+# heap = []
+# for num in count.keys():
+#     heapq.heappush(heap, (count[num], num))
+    
+#     if len(heap) > k:
+#         heapq.heappop(heap)
+
+# res = []
+# for i in range(k):
+#     res.append(heapq.heappop(heap)[1])
+# # return res
+# print(res) 
+freq = [[] for i in range(len(nums))]
+
+# for num in nums:
+#     count[num] = 1 + count.get(num, 0)
+for num, cnt in count.items():
+    freq[cnt-1].append(num)
+print(freq)
 
 res = []
-for i in range(k):
-    res.append(heapq.heappop(heap)[1])
-# return res
-# print(res) /
+for i in range(len(freq) - 1, 0, -1):
+    for num in freq[i]:
+        res.append(num)
+        if len(res) == k:
+            print(res)
+            break
