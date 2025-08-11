@@ -1,4 +1,4 @@
-
+import heapq
 from collections import defaultdict
 
 # def groupAnagrams(strs):
@@ -40,21 +40,20 @@ from collections import defaultdict
 #         nums=nums[i+1:]+nums[:i+1]
 #         print(nums)
 #         print(nums==sorted(nums))
-nums=[3,0,1,0]
-
+nums=[1,2,2,3,3,3]
+k=2
 count = {}
 for num in nums:
     count[num] = 1 + count.get(num, 0)
 
-arr = []
-for num, cnt in count.items():
-    arr.append([cnt, num])
-arr.sort()
-# k=
-# res = []
-# while len(res) < k:
-#     res.append(arr.pop()[1])
-# print(res) 
+heap = []
+for num in count.keys():
+    heapq.heappush(heap, (count[num], num))
+    if len(heap) > k:
+        heapq.heappop(heap)
 
-
-        
+res = []
+for i in range(k):
+    res.append(heapq.heappop(heap)[1])
+# return res
+# print(res) /
