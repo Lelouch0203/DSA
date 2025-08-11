@@ -40,3 +40,21 @@ from collections import defaultdict
 #         nums=nums[i+1:]+nums[:i+1]
 #         print(nums)
 #         print(nums==sorted(nums))
+nums=[3,0,1,0]
+
+count = {}
+for num in nums:
+    count[num] = 1 + count.get(num, 0)
+
+arr = []
+for num, cnt in count.items():
+    arr.append([cnt, num])
+arr.sort()
+# k=
+# res = []
+# while len(res) < k:
+#     res.append(arr.pop()[1])
+# print(res) 
+
+
+        
