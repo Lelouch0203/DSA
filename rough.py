@@ -77,16 +77,16 @@ for num in nums:
 
 
 
-Input=["neet","code","love","you"]
-s=''
-for i in Input:
-    s+=str(len(i))+i
-print(s)
-arr=[]
-i=0
-while i<len(s):
-    j=i+1
-    for j in range(int(i)):
+# Input=["neet","code","love","you"]
+# s=''
+# for i in Input:
+#     s+=str(len(i))+i
+# print(s)
+# arr=[]
+# i=0
+# while i<len(s):
+#     j=i+1
+#     for j in range(int(i)):
         
         
     
