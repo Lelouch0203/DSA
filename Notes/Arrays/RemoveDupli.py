@@ -16,7 +16,7 @@ def twoP(arr):
             arr[i+1]=arr[j]
             j+=1
             i+=1
-    arr=arr[:i+1]+['_' for i in range(len(arr)-(i+1))]
+    # arr=arr[:i+1]+['_' for i in range(len(arr)-(i+1))]
     return i+1,arr
     
             
