@@ -1,37 +1,39 @@
-req=9
-# subarr=[]
-# for i in range(len(arr)):
-#     for j in range(i,len(arr)):
-#         p=arr[i:j+1]
-#         if sum(p) == req:
-#             subarr.append([len(p),p])
-# subarr.sort()
-# print(subarr)
-# print(subarr[-1][1])
-arr=[-1,1,1]
-def maxsub(arr):
-    count=0
-    suum=0
-    maxi=0
-    i=0
-    while i<len(arr):
-        suum+=arr[i]
-        count+=1
-        if suum ==2 or suum>2:
-            # maxi=max(maxi,count)
-            maxi = count if count > maxi else maxi
-            count=0
-            suum=0
-        i+=1
-        
-    return maxi 
-print(maxsub(arr))
-            
-                    
-                
-                
-        
 
-        
-    
-    
+# for i in range(n):
+#     for j in range(i,n):
+#         sm=0
+#         for o in range(i,j+1):
+#             sm+=arr[o]
+#         if sm==k:
+#             length=max(length,j-i+1)
+# print(length)
+
+# for i in range(n):
+#     s=0
+#     for j in range(i,n):
+#         s+=arr[j]
+#         if s==k:
+#             length= max(length,j-i+1)
+# print(length)
+
+arr = [2,3,5,1,9]
+k=9
+n=len(arr)
+
+preSum={}
+s=0
+maxlen=0
+for i in range(n):
+    s+=arr[i]
+    if s==k:
+        maxlen=i+1
+    rem=s-k
+    if rem in preSum:
+        length=i-preSum[rem]
+        maxlen=max(maxlen,length)
+    if s not in preSum:
+        preSum[s]=i
+print(maxlen)
+print(preSum)
+
+

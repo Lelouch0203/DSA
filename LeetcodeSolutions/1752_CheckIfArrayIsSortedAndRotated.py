@@ -6,4 +6,3 @@ def check(nums):
             nums=nums[i+1:]+nums[:i+1]
             return  (nums == sorted(nums))
 print(check(nums=[3,4,5,1,2]))
-    

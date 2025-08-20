@@ -1,7 +1,7 @@
 a=[1,2,3,4,5]
 b=[3,4,5,6,7]
 # c=list(set(a+b))  
-# c=[]
+c=[]
 # m={}
 
 # for num in a:
@@ -12,5 +12,12 @@ b=[3,4,5,6,7]
 #     c.append(num)
 
 
+# for i in a:
+#     if i not in c :
+#         c.append(i)
+# for i in b:
+#     if i not in c :
+#         c.append(i)
 
-# print(c)
+
+print(c)

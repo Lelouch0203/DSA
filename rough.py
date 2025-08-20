@@ -40,11 +40,11 @@ from collections import defaultdict
 #         nums=nums[i+1:]+nums[:i+1]
 #         print(nums)
 #         print(nums==sorted(nums))
-nums=[1,1,1,1,2,2,3]
-k=2
-count = {}
-for num in nums:
-    count[num] = 1 + count.get(num, 0)
+# nums=[1,1,1,1,2,2,3]
+# k=2
+# count = {}
+# for num in nums:
+#     count[num] = 1 + count.get(num, 0)
 
 # heap = []
 # for num in count.keys():
@@ -92,3 +92,68 @@ for num in nums:
     
     
 
+# nums=[-1,0,1,2,3]
+# whole=1
+# for i in nums:
+#     whole*=i
+# for i in range(len(nums)):
+#     if nums[i]==0:
+#         nums[i]=-6
+#         continue
+#     nums[i]=whole//nums[i]
+# print(nums)
+
+
+# for i in range(len(arr)):
+#     for j in range(i+1,len(arr)):
+#         curr=arr[j]-arr[i]
+#         maxi=max(maxi,curr)
+#         print(maxi)
+#         # print('-')
+# print(maxi)
+
+
+# arr=[7,1,5,3,6,4]
+# maxpro=0
+# minP=float('inf')
+# for i in range(len(arr)):
+#     minP=min(arr[i],minP)
+#     print(arr[i],minP,end=",")
+#     maxpro=max(maxpro,arr[i]-minP)
+#     print(maxpro)
+#     print("____________________________________")
+# print(maxpro)
+    
+# strs='23232'
+# strs_list = list(strs)
+# strs_list[0] = '4'
+# strs = ''.join(strs_list)
+    
+# def sumofdig(num):
+#     summ=0
+#     while num>0:
+#         summ+=num%10
+#         num//=10
+#     return summ
+# # print(sumofdig(23))
+# nums=list(map(int,input().split()))
+# # nums=[]
+# count={}
+# for num in nums:
+#     i=sumofdig(num)   
+#     count[i]=count.get(i,0)+1
+# print(count)
+# ans=0
+# for sm,nos in count.items():
+
+#     if nos>=2:
+#         ans+=(nos*(nos-1))//2
+# print(ans)
+        
+arr=[-1,1,3,3,15,6,3,-3,3,-5,-7]
+posi=0
+for i in range(len(arr)):
+    if arr[i]<0:
+        arr[i],arr[posi]=arr[posi],arr[i]
+        posi+=1
+print(arr)
