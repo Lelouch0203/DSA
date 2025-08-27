@@ -1,4 +1,2 @@
-while i<n:
-#     nums[i],nums[i+n]=nums[i+n],nums[i]
-#     i+=2
-    
+    # for i in range(pvt+1,(len(arr)-pvt+1)//2):
+    #     arr[i],arr[len(arr)-i]=arr[len(arr)-i],arr[i]

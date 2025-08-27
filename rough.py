@@ -150,10 +150,16 @@ from collections import defaultdict
 #         ans+=(nos*(nos-1))//2
 # print(ans)
         
-arr=[-1,1,3,3,15,6,3,-3,3,-5,-7]
-posi=0
-for i in range(len(arr)):
-    if arr[i]<0:
-        arr[i],arr[posi]=arr[posi],arr[i]
-        posi+=1
+# arr=[-1,1,3,3,15,6,3,-3,3,-5,-7]
+# posi=0
+# for i in range(len(arr)):
+#     if arr[i]<0:
+#         arr[i],arr[posi]=arr[posi],arr[i]
+#         posi+=1
+# print(arr)
+
+
+arr=[1,2,3,4,5]
+for i in range(len(arr)//2):
+    arr[i],arr[(len(arr)-1)-i]=arr[(len(arr)-1)-i],arr[i]
 print(arr)
