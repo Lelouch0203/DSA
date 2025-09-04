@@ -2,8 +2,8 @@
 # for i in range(n):
 #     for j in range(i,n):
 #         sm=0
-#         for o in range(i,j+1):
-#             sm+=arr[o]
+#         for k in range(i,j+1):
+#             sm+=arr[k]
 #         if sm==k:
 #             length=max(length,j-i+1)
 # print(length)
