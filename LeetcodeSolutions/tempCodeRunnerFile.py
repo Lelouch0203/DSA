@@ -1,2 +1,1 @@
-    # if target*lenofwin-sumofwin<=k:
-    #     maxlenofwin=max(lenofwin,maxlenofwin)
+3,4,5,12,19,22,44,150
