@@ -14,7 +14,7 @@ def insertt(arr,x):
         else:
             l=mid+1
     
-    
+    return ans
     
 
 print(insertt(arr,x))

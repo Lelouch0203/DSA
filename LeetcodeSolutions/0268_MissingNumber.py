@@ -15,4 +15,5 @@ for i in range(N - 1):
     xor1 = xor1 ^ (i + 1)  # XOR up to [1...N-1]
 
 xor1 = xor1 ^ N  # XOR up to [1...N]
+print(xor1,xor2)
 print(xor1 ^ xor2)  # the missing number

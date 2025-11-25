@@ -69,11 +69,24 @@ def missingNr(arr):
     xor2^=len(arr)+1
     return xor2 ^ xor1
 
-print(missingNr([1,2,3,4,6,7]))
+# print(missingNr([1,2,3,4,6,7]))
         
             
+# intervals=[[1,3],[1,4],[2,5],[3,5]]
+# numbers = sorted(set(num for start, end in intervals for num in range(start, end + 1)))
+# count=[-2]*len(intervals)
+# for num in numbers:
+#     for j in range(len(intervals)):
+#         if intervals[j][0]<=num and num<=intervals[j][1]:
             
-    
-
-
-
+#             count[j]+=1
+#             print(count)
+# summ  = sum(count)
+# if summ>len(numbers):
+#     print(len(numbers)-summ%len(intervals))
+# else:
+#     print(len(numbers)-summ)
+            
+            
+arr=[0,1,1]
+print(arr[:])

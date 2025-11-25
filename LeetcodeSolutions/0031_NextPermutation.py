@@ -1,8 +1,5 @@
 
 def nextPermutation(nums):
-    """
-    Do not return anything, modify nums in-place instead.
-    """
     pvt=-1
     for i in range(len(nums)-2,-1,-1):
         if nums[i]<nums[i+1]:

@@ -1,6 +1,6 @@
 def CoS(nums,target):
-    l =0 
-    r= len(nums)-1
+    l=0 
+    r=len(nums)-1
     ans=len(nums)
     while l<=r:
         mid = (l+r)//2

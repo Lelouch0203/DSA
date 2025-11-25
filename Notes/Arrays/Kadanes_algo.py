@@ -22,4 +22,3 @@ for i in range(len(arr)):
 print(maxsum)
 print(arr[start+1:end+1])
 
-            
