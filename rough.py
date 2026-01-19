@@ -102,16 +102,17 @@ def missingNr(arr):
 #         j+=1
 # print(nums,cnt)
 
-def get_3x3_matrices(grid):
-    matrices = []
-    rows = len(grid)
-    cols = len(grid[0])
+# def get_3x3_matrices(grid):
+#     matrices = []
+#     rows = len(grid)
+#     cols = len(grid[0])
     
-    for i in range(rows - 2):
-        for j in range(cols - 2):
-            mat = [grid[i+k][j:j+3] for k in range(3)]
-            matrices.append(mat)
+#     for i in range(rows - 2):
+#         for j in range(cols - 2):
+#             mat = [grid[i+k][j:j+3] for k in range(3)]
+#             matrices.append(mat)
     
-    return matrices
-grid = [[4,3,8,4,2],[9,5,1,9,3],[2,7,6,2,3]]
-print(get_3x3_matrices(grid))
+#     return matrices
+# grid = [[4,3,8,4,2],[9,5,1,9,3],[2,7,6,2,3]]
+# print(get_3x3_matrices(grid))
+
