@@ -1,17 +1,28 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 int main()
 {
+
     int n;
     cin >> n;
-    long long fsum = 0;
-    int num;
-    for (int i = 0; i < n - 1; i++)
+    if (n == 1)
     {
-        cin >> num;
-        fsum += num;
+        cout << 1;
+        return 0;
     }
-    long long sum = (long long)n * (n + 1) / 2;
-    cout << sum - fsum;
+
+    if (n < 4)
+    {
+        cout << "NO SOLUTION";
+        return 0;
+    }
+    for (int i = (n % 2 ? n : n - 1); i >= 1; i -= 2)
+    {
+        cout << i << " ";
+    }
+    for (int i = (n % 2 ? n - 1 : n); i >= 2; i -= 2)
+    {
+        cout << i << " ";
+    }
+    return 0;
 }
